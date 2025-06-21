@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+<head><title>Resumen</title></head>
+<body>
+<h2>Resumen</h2>
+<p>{{ producto }}: {{ cantidad }} {{ "unidades" if producto == "Huevos" else "kilos" }}</p>
+<form method="post" action="/confirmar">
+    <input type="hidden" name="producto" value="{{ producto }}">
+    <input type="hidden" name="cantidad" value="{{ cantidad }}">
+    <button type="submit">Confirmar</button>
+</form>
+</body>
+</html>

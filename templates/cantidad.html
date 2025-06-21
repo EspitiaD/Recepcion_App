@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head><title>Ingresa Cantidad</title></head>
+<body>
+<h2>¿Cuánto de {{ producto }}?</h2>
+<form method="post" action="/resumen">
+    <input type="hidden" name="producto" value="{{ producto }}">
+    <input type="number" name="cantidad" required>
+    <button type="submit">Siguiente</button>
+</form>
+</body>
+</html>
